@@ -1,18 +1,16 @@
 package com.tnsif.lesson3f;
-class DemoFive{
-	void displayOutput() {
-		System.out.println("Im a five")
-	}
 
-}
 public class Six {
-	void displayOutput() {
-		System.out.println("Im a five")
-	}
 
+	public void dispOutput() {
+		System.out.println("I am Six");
+	}
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-    
+		
+	
 	}
 
 }
+
