@@ -1,4 +1,4 @@
-package Collection_Framework;
+package com.tnsif.collection_framework;
 
 import java.util.ArrayList;
 import java.util.Iterator;
