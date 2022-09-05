@@ -10,8 +10,9 @@ class TreeMapExample
       map.put(102,"Ravi");    
       map.put(101,"Vijay");    
       map.put(103,"Rahul");    
-     // map.put(null, "Xaviour");
+     //map.put(null, "Xaviour");
      map.put(105, null);
+     //map.put(null,null); Key should not be "Null"
         //removing entry based on key
      //get an enrty
      //replace an entry
