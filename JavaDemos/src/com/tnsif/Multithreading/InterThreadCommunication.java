@@ -2,7 +2,7 @@
 package com.tnsif.Multithreading;
 
 
-class MyData2{
+class MyData1{
 	int value=0;
 	boolean flag=true;
 	synchronized void set(int v) throws InterruptedException
@@ -26,8 +26,8 @@ class MyData2{
 }
 class Producer extends Thread
 {
-	MyData2 d;
-	public Producer(MyData2 dat) {d=dat;}
+	MyData1 d;
+	public Producer(MyData1 dat) {d=dat;}
 	public void run()
 	{
 		int i =1;
@@ -45,8 +45,8 @@ class Producer extends Thread
 }
 class Consumer extends Thread
 {
-	MyData2 d;
-	public Consumer(MyData2 dat) {d=dat;}
+	MyData1 d;
+	public Consumer(MyData1 dat) {d=dat;}
 	public void run()
 	{
 		while(true)
@@ -63,7 +63,7 @@ class Consumer extends Thread
 public class InterThreadCommunication {
 
 	public static void main(String[] args) {
-		MyData2 d = new MyData2();
+		MyData1 d = new MyData1();
 		Producer p = new Producer(d);
 		Consumer c = new Consumer(d);
 		p.start();
