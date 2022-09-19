@@ -24,6 +24,7 @@ class MyData1{
 		return x;
 	}
 }
+
 class Producer extends Thread
 {
 	MyData1 d;
